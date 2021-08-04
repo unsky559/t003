@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "Avant Grade";
+  src:  url('./AvantGardeGothicCTTRegular.ttf') format('truetype'),
+        url('./AvantGardeGothicCTT.woff') format('woff');
+}

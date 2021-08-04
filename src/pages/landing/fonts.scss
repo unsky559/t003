@@ -1,0 +1,11 @@
+@import url(../../res/fonts/avantGrade/avantGrade.css);
+
+@mixin font-regular {
+  font-family: 'Avant Grade';
+  font-weight: 400;
+}
+
+@mixin sizing-sm{
+  font-size: 14px;
+  line-height: 22px;
+}
