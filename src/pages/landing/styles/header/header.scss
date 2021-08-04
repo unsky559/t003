@@ -1,0 +1,28 @@
+.main-header{
+  height: 100px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  .container{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo{
+    width: calc(100% / 12 * 2);
+    margin-right: $glob-grid-gap;
+    img{
+      width: 150px;
+    }
+  }
+  .links{
+    margin-left: calc(100% / 12 * 2);
+    width: calc(100% / 12 * 6);
+  }
+  .controls{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

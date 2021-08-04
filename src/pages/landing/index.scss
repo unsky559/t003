@@ -1,0 +1,30 @@
+$glob-grid-gap: 20px;
+
+@import './fonts.scss';
+@import './styles/header/header.scss';
+@import './styles/header/header-navigation.scss';
+@import './styles/container.scss';
+@import './styles/buttons/rounded-btn.scss';
+
+*{
+  box-sizing: border-box;
+}
+
+html, 
+body{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+//theme
+
+body{
+  --color-secondary: rgba(75, 75, 75, 1);
+  --color-secondary-light: #C4C4C4;
+  --color-primary: rgba(0, 69, 119, 1);
+  --color-primary-light: #67A5C8;
+}

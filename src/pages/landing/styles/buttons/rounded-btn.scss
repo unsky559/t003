@@ -1,0 +1,8 @@
+.rounded-btn{
+  @include font-regular;
+  @include sizing-sm;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+  padding: 10px 25px;
+  border-radius: 24px;
+}

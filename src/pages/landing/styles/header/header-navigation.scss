@@ -1,0 +1,23 @@
+.header-navigation{
+  ul{
+    list-style: none;
+    li{
+      display: inline-block;
+      margin-right: 40px;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        //font settings
+        @include font-regular;
+        @include sizing-sm;
+        color: var(--color-secondary);
+        transition: color .3s;
+        &:hover{
+          font-weight: 700;
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
+}
