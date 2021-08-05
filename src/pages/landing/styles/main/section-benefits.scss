@@ -23,9 +23,6 @@
         text-transform: uppercase;
       }
       p{
-        @include font-regular;
-        @include sizing-sm;
-        color: var(--color-secondary);
         margin-top: 1rem;
         margin-bottom: 1rem;
       }

@@ -34,7 +34,7 @@
   font-weight: 700;
 }
 
-h1.heading{
+.heading{
   @include font-regular;
   @include sizing-xl;
   color: var(--color-primary);
@@ -44,4 +44,17 @@ h1.heading{
     color: #ffffff;
     text-shadow: 0 0 12px rgba(0,69,119,1);
   }
+}
+
+.subheading{
+  @include font-regular;
+  @include sizing-s;
+  color: var(--color-secondary-dark);
+  text-align: center;
+}
+
+p{
+  @include font-regular;
+  @include sizing-sm;
+  color: var(--color-secondary);
 }

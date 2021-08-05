@@ -9,6 +9,7 @@ $glob-grid-gap: 20px;
 
 @import './styles/main/section-order.scss';
 @import './styles/main/section-benefits.scss';
+@import './styles/main/section-why.scss';
 
 *{
   box-sizing: border-box;
@@ -34,8 +35,10 @@ a{
 body{
   --color-secondary: rgba(75, 75, 75, 1);
   --color-secondary-light: #C4C4C4;
+  --color-secondary-dark: rgba(131, 131, 131, 1);
   --color-primary: rgba(0, 69, 119, 1);
   --color-primary-light: #67A5C8;
+  --color-glass-light: #DCF1FE;
   --color-background: #ffffff;
   --color-black-white: #000;
 }
