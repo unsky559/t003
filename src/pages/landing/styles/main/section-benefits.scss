@@ -1,0 +1,112 @@
+#section-benefits{
+  padding: 200px 0;
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ben{
+    width: calc(100% / 12 * 7 + 20px);
+    margin-left: calc(100% / 12 + 20px);
+    border-radius: 3px;
+
+    display: flex;
+    position: relative;
+
+    .text{
+      width: calc(100% / 8 * 6);
+      h1{
+        @include font-regular;
+        @include sizing-x;
+        color: #000;
+        text-transform: uppercase;
+      }
+      p{
+        @include font-regular;
+        @include sizing-sm;
+        color: var(--color-secondary);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+  }
+  .benefit-0{
+    padding: 40px 60px;
+    border: 1px solid rgba(103, 165, 200, 0.3);
+    box-shadow: 0px 0px 8px 3.5px rgba(103, 165, 200, 0.2), 0px 0px 8px 3.5px rgba(103, 165, 200, 0.2) inset;
+    
+    margin-top: 40px;
+    margin-bottom: 150px;
+
+    .image{
+      position: absolute;
+      right: -50%;
+      // transform: translate(80%, 0px);
+    }
+  }
+
+  .benefit-1{
+    width: calc(100% / 12 * 9);
+
+    padding: 40px 60px;
+    border: 1px solid rgba(227, 217, 133, 0.3);
+    box-shadow: 0px 0px 8px 3.5px rgba(227, 217, 133, 0.25), 0px 0px 8px 3.5px rgba(227, 217, 133, 0.25) inset;
+    
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .image{
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-10%, -15%);
+    }
+    .text{
+      margin-left: calc(100% / 8 * 3);
+      width: calc(100% / 8 * 6);
+    }
+  }
+
+  .benefit-2{
+    width: calc(100% / 12 * 7);
+
+    padding: 40px 60px;
+    border: 1px solid rgba(164, 3, 31, 0.1);
+    box-shadow: 0px 0px 8px 2px rgba(164, 3, 31, 0.15), 
+                0px 0px 8px 2px rgba(164, 3, 31, 0.15) inset;
+    
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-left: calc(100% / 12 * 4);
+
+    .image{
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-10%, -25%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .discunut-size{
+        @include font-regular;
+        @include sizing-xl;
+        font-weight: 400;
+        color: #ffffff;
+        position: absolute;
+        transform: rotate(-15deg);
+      }
+    }
+    .text{
+      width: calc(100% / 7 * 5);
+    }
+    .inline-logos{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+}

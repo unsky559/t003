@@ -2,10 +2,46 @@
 
 @mixin font-regular {
   font-family: 'Avant Grade';
-  font-weight: 400;
 }
 
 @mixin sizing-sm{
   font-size: 14px;
   line-height: 22px;
+  font-weight: 400;
+}
+
+@mixin sizing-s {
+  font-size: 17.5px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+@mixin sizing-x {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 33px;
+}
+
+@mixin sizing-xl {
+  font-size: 43px;
+  line-height: 56px;
+  font-weight: 700;
+}
+
+@mixin sizing-banner{
+  font-size: 67px;
+  line-height: 87px;
+  font-weight: 700;
+}
+
+h1.heading{
+  @include font-regular;
+  @include sizing-xl;
+  color: var(--color-primary);
+  margin: 0 auto;
+  text-align: center;
+  span{
+    color: #ffffff;
+    text-shadow: 0 0 12px rgba(0,69,119,1);
+  }
 }

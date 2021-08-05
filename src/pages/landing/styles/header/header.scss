@@ -1,5 +1,12 @@
+$header-height: 100px;
+
+.header-saver{
+  height: $header-height;
+  width: 100%;
+}
 .main-header{
-  height: 100px;
+  position: absolute;
+  height: $header-height;
   width: 100%;
 
   display: flex;
