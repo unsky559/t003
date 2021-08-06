@@ -4,6 +4,12 @@
   font-family: 'Avant Grade';
 }
 
+@mixin sizing-smm{
+  font-size: 11px;
+  line-height: 14.5px;
+  font-weight: 400;
+}
+
 @mixin sizing-sm{
   font-size: 14px;
   line-height: 22px;
