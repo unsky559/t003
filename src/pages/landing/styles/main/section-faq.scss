@@ -1,0 +1,115 @@
+#section-faq{
+  margin-bottom: 200px;
+
+  .heading{
+    text-align: start;
+    margin-bottom: 30px;
+  }
+
+  .subheading{
+    text-align: start;
+    margin-bottom: 50px;
+  }
+
+  .faqs{
+    display: flex;
+
+    .faqs-col{
+      margin-right: 20px;
+      &:last-child{
+        margin-right: 0;
+        flex-grow: 1;
+      }
+    }
+
+    .faq-card{
+      margin-bottom: 10px;
+      cursor: pointer;
+      &_header{
+        @include font-regular;
+        @include sizing-sm;
+        font-weight: 700;
+
+        padding: 25px;
+        padding-right: 60px;
+        border-radius: 7px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #F8F8F8;
+        .plus{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &::after{
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 15px;
+            border-radius: 2px;
+            transform: rotate(0deg);
+            background: var(--color-primary);
+            transition: .5s;
+          }
+          &::before{
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 15px;
+            border-radius: 2px;
+            transform: rotate(90deg);
+            background: var(--color-primary);
+            transition: .5s;
+          }
+        }
+      }
+
+      &_body{
+        overflow-y: hidden;
+        height: 0px;
+        transform: translateY(-20px);
+        padding: 0px 25px;
+        border: 1.2px solid var(--color-primary);
+        border-top: none;
+        opacity: 0;
+        border-radius: 0 0 7px 7px;
+        transition: .5s;
+      }
+
+      &.active{
+        margin-bottom: 0px;
+        
+        .faq-card_header{
+          
+          background: var(--color-primary);
+          color: #fff;
+          .plus{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::after{
+              transform: rotate(45deg);
+              background: #fff;
+            }
+            &::before{
+              transform: rotate(-45deg);
+              background: #fff;
+            }
+          }
+        }
+        .faq-card_body{
+          transform: translateY(-10px);
+          padding: 30px 25px;
+          border: 1.2px solid var(--color-primary);
+          border-radius: 0 0 7px 7px;
+          opacity: 1;
+          height: auto;
+        }
+
+      }
+      
+    }
+  }
+
+}
