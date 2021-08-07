@@ -8,6 +8,7 @@ $glob-grid-gap: 20px;
 @import './styles/switch/switch.scss';
 @import './styles/buttons/circle-btn-slider.scss';
 @import './styles/gallery.scss';
+@import './styles/form/default-form.scss';
 
 @import './styles/main/section-order.scss';
 @import './styles/main/section-benefits.scss';
@@ -17,6 +18,7 @@ $glob-grid-gap: 20px;
 @import './styles/main/section-interier.scss';
 @import './styles/main/section-reviews.scss';
 @import './styles/main/section-faq.scss';
+@import './styles/main/section-footer.scss';
 
 *{
   box-sizing: border-box;

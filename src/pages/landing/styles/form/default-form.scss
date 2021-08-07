@@ -1,0 +1,30 @@
+.default-form{
+  width: 100%;
+  input{
+    padding: 12px 13px;
+    border-radius: 7px;
+    width: 100%;
+    display: block;
+    @include font-regular;
+    @include sizing-s;
+    color: #000;
+
+    border: 1px solid #EDEDED;
+  }
+  .check{
+    display: flex;
+    label{
+      @include font-regular;
+      @include sizing-sm;
+      color: #c4c4c4;
+    }
+    input[type=checkbox]{
+      min-width: 20px;
+      min-height: 20px;
+      max-width: 20px;
+      max-height: 20px;
+      border: 1px solid #EDEDED;
+
+    }
+  }
+}
