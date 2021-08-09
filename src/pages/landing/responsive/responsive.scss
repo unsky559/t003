@@ -1,3 +1,7 @@
+body{
+  min-width: 530px;
+}
+
 @media screen and (max-width: 1230px) {
   .main-header{
     .links{
@@ -181,6 +185,25 @@
   #section-interier{
     .swiper-container-interier{
       height: 170px;
+    }
+  }
+  .galery{
+    .control-right,
+    .control-left{
+      display: none;
+    }
+  }
+
+  #section-benefits {
+    .benefit-2 {
+      .text{
+        width: calc(100% / 8 * 6);
+      }
+      .inline-logos{
+        img{
+          width: 100%;
+        }
+      }
     }
   }
 
