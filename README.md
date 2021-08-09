@@ -1,4 +1,4 @@
-**Deploy: https://unsky559.github.io/t002/**
+**Deploy: https://unsky559.github.io/t003/pages/landing/**
 ## dev server
 ```
 npm run serve
