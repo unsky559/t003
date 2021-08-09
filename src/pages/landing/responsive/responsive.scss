@@ -1,0 +1,187 @@
+@media screen and (max-width: 1230px) {
+  .main-header{
+    .links{
+      margin-left: 1%;
+      width: 100%;
+    }
+  }
+  #section-benefits{
+    .ben{
+      .text{
+        width: calc(100% / 8 * 5);
+      }
+    }
+    .benefit-1{
+      .text{
+        margin-left: calc(100% / 8 * 4);
+      }
+    }
+    .benefit-2{
+      width: calc(100% / 12 * 8);
+      margin-left: calc(100% / 12 * 2);
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main-header{
+    .links{
+      display: none;
+    }
+  }
+
+  #section-order{
+    .text{
+      .banner-main-text{
+        font-size: 60px;
+        line-height: 70px;
+      }
+    }
+    
+  }
+
+  #section-benefits{
+    padding: 50px 0;
+    .ben{
+      .text{
+        width: calc(100% / 8 * 4);
+      }
+    }
+    .benefit-0{
+      flex-direction: column;
+      width: 100%;
+      margin-left: unset;
+      margin-bottom: 50px;
+      .text{
+        width: 100%;
+      }
+      .image{
+        position: unset;
+        right: unset;
+        img{
+          width: 100%;
+        }
+      }
+    }
+    .benefit-1{
+      flex-direction: column;
+      margin-bottom: 50px;
+      .image{
+        position: unset;
+        top: unset;
+        left: unset;
+        transform: unset;
+        img{
+          width: 100%;
+        }
+      }
+      .text{
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+      }
+    }
+    .benefit-2{
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  #section-why {
+    .cards{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  #section-buy-online{
+    padding: 100px 0;
+    .buy-online-block{
+      flex-direction: column;
+      .text{
+        .shoplinks{
+          max-width: 380px;
+          margin: 0 auto;
+        }
+      }
+      .good{
+        margin-left: 0;
+        width: 100%;
+        .good-card{
+          margin: 0 auto;
+          margin-top: 40px;
+          max-width: 400px;
+        }
+      }
+    }
+  }
+
+  #section-faq{
+    .faqs{
+      flex-direction: column;
+      .faqs-col{
+        margin-right: 0;
+      }
+    }
+  }
+
+  #section-interier{
+    .swiper-container-interier{
+      height: 300px;
+    }
+  }
+
+  #section-footer{
+    .block{
+      flex-direction: column-reverse;
+      .right{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 50px;
+      }
+      .left{
+        width: 100%;
+
+      }
+    }
+  }
+
+  .footer{
+    .content{
+      flex-direction: column;
+      .logo{
+        margin-bottom: 25px;
+      }
+    }
+    .navigation{
+      margin-left: 0;
+      ul{
+        flex-direction: column;
+        li{
+          margin-bottom: 15px;
+          text-align: center;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  
+}
+
+@media screen and (max-width: 750px) {
+  #section-order{
+    .text{
+      width: 100%;
+      margin-right: 0;
+    }
+    .image{
+      display: none;
+    }
+  }
+
+  #section-interier{
+    .swiper-container-interier{
+      height: 170px;
+    }
+  }
+
+}
