@@ -15,30 +15,30 @@
   .control-right{
     padding-left: 20px;
   }
-  .galery-grid{
-    .galery-row{
-      display: flex;
-      width: 100%;
-      margin-bottom: 20px;
-      &:last-child{
-        margin-bottom: 0;
-      }
+}
+.galery-grid{
+  .galery-row{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
     }
-    .galery-col{
-      width: 100%;
-      margin-left: 10px;
-      margin-right: 10px;
-      &:first-child{
-        margin-left: 0;
-      }
-      &:last-child{
-        margin-right: 0;
-      }
+  }
+  .galery-col{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
 
-      img{
-        display: inherit;
-        width: 100%;
-      }
+    img{
+      display: inherit;
+      width: 100%;
     }
   }
 }

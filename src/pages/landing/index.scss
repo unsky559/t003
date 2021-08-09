@@ -21,6 +21,8 @@ $glob-grid-gap: 20px;
 @import './styles/main/section-footer.scss';
 @import './styles/footer/footer.scss';
 
+@import './responsive/responsive.scss';
+
 *{
   box-sizing: border-box;
 }

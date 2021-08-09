@@ -6,8 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./landing/index.css">
   <script src="../../res/scripts/components/header-component.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../../res/scripts/components/landing.js"></script>
 </head>
 <body>
   <header class="main-header">
@@ -342,46 +345,62 @@
           Наши зеркала в интерьере
         </h2>
         <p class="subheading">Посмотрите как могут выглядеть наши зеркала у вас дома </p>
-      </div>
-        <div class="galery">
-          <div class="control-left">
-            <div class="circle-btn-slider left"><div></div></div>
-          </div>
-          <div class="contenter">
-            
-            <div class="galery-grid">
-              <div class="galery-row">
-                <div class="galery-col">
-                  <img src="../../res/images/photos/Rectangle 5.png" alt="">
-                </div>
-                <div class="galery-col">
-                  <div class="galery-row">
-                    <div class="galery-col">
-                      <img src="../../res/images/photos/Rectangle 15.png" alt="">
-                    </div>
-                    <div class="galery-col">
-                      <img src="../../res/images/photos/Rectangle 14.png" alt="">
-                    </div>
-                  </div>
-                  <div class="galery-row">
-                    <div class="galery-col">
-                      <img src="../../res/images/photos/Rectangle 13.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="galery-col">
-                  <img src="../../res/images/photos/Rectangle 16.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="pager">
 
+        <div class="galery">
+
+          <div class="control-left">
+            <div id="int-slider-left" class="circle-btn-slider left"><div></div></div>
+          </div>
+
+          <div class="swiper-container swiper-container-interier">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                
+                
+                <div class="galery-grid">
+                  <div class="galery-row">
+                    <div class="galery-col">
+                      <img src="../../res/images/photos/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="galery-col">
+                      <div class="galery-row">
+                        <div class="galery-col">
+                          <img src="../../res/images/photos/Rectangle 15.png" alt="">
+                        </div>
+                        <div class="galery-col">
+                          <img src="../../res/images/photos/Rectangle 14.png" alt="">
+                        </div>
+                      </div>
+                      <div class="galery-row">
+                        <div class="galery-col">
+                          <img src="../../res/images/photos/Rectangle 13.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="galery-col">
+                      <img src="../../res/images/photos/Rectangle 16.png" alt="">
+                    </div>
+                  </div>
+                </div>
+  
+
+              </div>
+  
             </div>
+            <!-- If we need pagination -->
+
+            <div class="swiper-pagination"></div>
           </div>
+
           <div class="control-right">
-            <div class="circle-btn-slider right"><div></div></div>
+            <div id="int-slider-right" class="circle-btn-slider right"><div></div></div>
           </div>
+
         </div>
+
+      </div>
 
     </section>
 
@@ -391,33 +410,44 @@
           Отзывы клиентов
         </h2>
         <p class="subheading">Посмотрите, что о нас говорят люди, которые уже купили себе зеркало</p>
-      </div>
-
-      <div class="galery">
-        <div class="control-left">
-          <div class="circle-btn-slider left"><div></div></div>
-        </div>
-        <div class="contenter">
+        
+        <div class="galery">
+          <div class="control-left">
+            <div id="gal-slider-left" class="circle-btn-slider left" tabindex="0"><div></div></div>
+          </div>
           
-          <div class="galery-grid">
-            <div class="galery-row">
-              <div class="galery-col">
-                <img src="../../res/images/photos/IMG_019956808671-1 1.png" alt="">
+          
+          <div class="swiper-container swiper-container-reviews" style="width: 100%; height: 450px;">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              
+              <!-- Slides -->
+              <div class="swiper-slide">
+
+                <div class="galery-grid">
+                  <div class="galery-row">
+                    <div class="galery-col">
+                      <img src="../../res/images/photos/IMG_019956808671-1 1.png" alt="">
+                    </div>
+                    <div class="galery-col">
+                      <img src="../../res/images/photos/IMG_247657DCB7E5-1 1.png" alt="">
+                    </div>
+                    <div class="galery-col">
+                      <img src="../../res/images/photos/IMG_DE92BA5200D7-1 1.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
               </div>
-              <div class="galery-col">
-                <img src="../../res/images/photos/IMG_247657DCB7E5-1 1.png" alt="">
-              </div>
-              <div class="galery-col">
-                <img src="../../res/images/photos/IMG_DE92BA5200D7-1 1.png" alt="">
-              </div>
+
             </div>
-          </div>
-          <div class="pager">
 
           </div>
-        </div>
-        <div class="control-right">
-          <div class="circle-btn-slider right"><div></div></div>
+          
+          <div class="control-right">
+            <div id="gal-slider-right" class="circle-btn-slider right" tabindex="0"><div></div></div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -429,7 +459,7 @@
         <div class="faqs">
           
           <div class="faqs-col">
-            <div class="faq-card active">
+            <div class="faq-card" tabindex="0">
               <div class="faq-card_header">
                 <span>
                   Не разобьётся ли зеркало при доставке?
@@ -444,7 +474,7 @@
               </div>
             </div>
 
-            <div class="faq-card">
+            <div class="faq-card" tabindex="0">
               <div class="faq-card_header">
                 <span>
                   Не разобьётся ли зеркало при доставке?
@@ -460,7 +490,7 @@
             </div>
           </div>
           <div class="faqs-col">
-            <div class="faq-card">
+            <div class="faq-card" tabindex="0">
               <div class="faq-card_header">
                 <span>
                   Не разобьётся ли зеркало при доставке?
@@ -475,7 +505,7 @@
               </div>
             </div>
 
-            <div class="faq-card">
+            <div class="faq-card" tabindex="0">
               <div class="faq-card_header">
                 <span>
                   Не разобьётся ли зеркало при доставке?
@@ -588,8 +618,8 @@
             <form class="default-form" action="">
                 <input type="text" placeholder="ФИО">
                 <input type="text" placeholder="Номер телефона">
-                <div class="dropdown">
-                    <div class="dropdown_container" tabindex="0">
+                <div class="dropdown" tabindex="0">
+                    <div class="dropdown_container">
                         Выбрать желамые функции
                         <div class="arrow"></div>
                     </div>
