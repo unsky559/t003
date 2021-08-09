@@ -10,9 +10,12 @@
     color: #000;
 
     border: 1px solid #EDEDED;
+
+    margin-bottom: 10px;
   }
   .check{
     display: flex;
+    margin-bottom: 10px;
     label{
       @include font-regular;
       @include sizing-sm;
@@ -24,7 +27,7 @@
       max-width: 20px;
       max-height: 20px;
       border: 1px solid #EDEDED;
-
+      margin-right: 10px;
     }
   }
 }
