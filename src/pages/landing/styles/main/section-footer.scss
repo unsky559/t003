@@ -135,10 +135,10 @@
             @include font-regular;
             @include sizing-s;
             font-weight: 700;
-            color: var(--color-secondary);
+            color: var(--color-secondary-light);
             padding: 10px 14px;
             border-radius: 7px;
-            border: 1px solid var(--color-secondary);
+            border: 1px solid var(--color-secondary-light);
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -147,6 +147,11 @@
             position: relative;
             z-index: 1;
             cursor: pointer;
+
+            &:focus{
+                border: 1px solid var(--color-secondary);
+                color: var(--color-secondary);
+            }
 
             .arrow {
                 display: flex;
