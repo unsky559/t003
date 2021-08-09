@@ -23,6 +23,8 @@ $glob-grid-gap: 20px;
 
 @import './responsive/responsive.scss';
 
+@import './styles/foreground.scss';
+
 *{
   box-sizing: border-box;
 }

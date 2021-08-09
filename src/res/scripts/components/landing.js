@@ -50,5 +50,16 @@ window.addEventListener('load', () => {
     })
   })
 
+
+  window.addEventListener('scroll', (e) => {
+    if(window.scrollY > 8250){
+      document.querySelector('.foreground>img').style.display = 'none';
+    }else{
+      document.querySelector('.foreground>img').style.transform = `translateY(${window.scrollY/4}px)`;
+      document.querySelector('.foreground>img').style.display = 'unset';
+    }
+  });
+
+
 })
 
